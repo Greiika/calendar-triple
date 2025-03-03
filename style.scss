@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('font/Great_Vibes/GreatVibes-Regular.ttf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Great Vibes', serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2.5px;
+}
+
+.header {
+    flex-shrink: 0;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: aliceblue;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0 -10px 20px;
+    padding: 10px 15px;
+    // .header_nav
+
+    &_nav {
+        display: flex;
+        justify-content: start;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    // .header_nav-logo
+
+    &_nav-logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.calendar-triple {
+    max-width: 1280px;
+    width: 100%;
+    margin: 20px auto 30px auto;
+    padding: 0 15px;
+    // .calendar-triple_wrapper
+
+    &_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    // .calendar-triple_header
+
+    &_header {
+        background-image: url('img/1681373052_sneg-top-p-kartinki-na-vesennyuyu-temu-krasivo-58.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        height: 300px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        &-title {
+            max-width: 375px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            height: 150px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                color: cornflowerblue;
+            }
+        }
+        @media (max-width: 1248px) {
+            max-width: 830px;
+            width: 100%;
+            margin: 0 auto 10px auto;
+        } 
+
+        @media (max-width: 830px) {
+            max-width: 400px;
+        }
+    }
+
+    // .calendar-triple_header-bg
+
+    &_header-bg {
+    }
+
+    // .calendar-triple_month-bg
+
+    &_month-bg {
+    }
+
+    // .calendar-triple_box
+
+    &_box {
+        background-color: cornflowerblue;
+        padding: 15px;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px rgb(0, 0, 0, 0.58);
+        max-width: 410px;
+        width: 100%;
+    }
+
+    // .calendar-triple_month
+
+    &_month {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 0px 0px 5px 5px;
+        height: 250px;
+
+        // .calendar-triple_month__shadow-week
+    
+        &__shadow-week {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(39, 120, 183, 0.3);
+            z-index: 10;
+            position: absolute;
+            left: 0;
+        }
+
+        // .calendar-triple_month__days-week
+    
+        &__days-week {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 5px 0 5px;
+            background-color: white;
+            position: relative;
+        }
+        
+        // .calendar-triple_month__days
+        
+        &__days {
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding: 5px 0px;
+        }
+    
+        // .calendar-triple_month__days-mon
+    
+        &__days-mon {
+            color: black;
+        }
+    
+        // .calendar-triple_month__days-tue
+    
+        &__days-tue {
+            color: black;
+        }
+    
+        // .calendar-triple_month__days-wed
+    
+        &__days-wed {
+            color: black;
+        }
+    
+        // .calendar-triple_month__days-thu
+    
+        &__days-thu {
+            color: black;
+        }
+    
+        // .calendar-triple_month__days-fri
+    
+        &__days-fri {
+            color: black;
+        }
+    
+        // .calendar-triple_month__days-sat
+    
+        &__days-sat {
+            color: rgb(212, 19, 19);
+            background-color: aliceblue;
+        }
+    
+        // .calendar-triple_month__days-sun
+    
+        &__days-sun {
+            color: rgb(212, 19, 19);
+            background-color: aliceblue;
+        }
+    }
+
+    // .calendar-triple_month-title
+
+    &_month-title {
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    // .calendar-triple_month-prev
+
+    &_month-prev {
+    }
+
+    // .calendar-triple_month-current
+
+    &_month-current {
+    }
+
+    // .calendar-triple_month-next
+
+    &_month-next {
+    }
+
+    // .calendar-triple_month-week
+
+    &_month-week {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .calendar-triple_month-weekend
+
+    &_month-weekend {
+        color: red;
+        background-color: aliceblue;
+    }
+
+    // .calendar-triple_month-day
+
+    &_month-day {
+        text-align: center;
+        max-width: 50px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+
+        // ,calendar-triple_month-day__null
+
+        &__null {
+            max-width: 60px;
+            width: 100%;
+            height: 60px;
+        }
+        &.currentDate {
+            border: 4px solid red;
+            border-radius: 10px;
+        }
+    }
+
+    // .calendar-triple_month-arrows
+
+    &_month-arrows {
+        display: flex;
+        justify-content: center;
+        
+        &__wrapper {
+            margin-top: 15px;
+            width: 240px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 50px;
+            border: 1px solid cornflowerblue;
+            padding: 5px;
+        } 
+
+        &__prev,
+        &__next {
+            width: 90px;
+            height: 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: cornflowerblue;
+            font-size: 24px;
+            color: white;
+            transition: all 0.3s ease-in;
+            border: 1px solid aliceblue;
+            &:hover {
+                border: 1px solid cornflowerblue;
+                background-color: aliceblue;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    
+        // .calendar-triple_month-arrows__prev
+    
+        &__prev {
+        }
+    
+        // .calendar-triple_month-arrows__next
+    
+        &__next {
+        }
+    }
+
+}
+
+.footer {
+
+    // .footer_wrapper
+    box-shadow: 0 10px 20px;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    &_year,
+    &_developer {
+        display: flex;
+        align-items: baseline;
+        h3 {
+            margin-left: 10px;
+        }
+    }
+
+    // .footer_year
+
+    &_year {
+    }
+
+    // .footer_developer
+
+    &_developer {
+    }
+
+    // .footer_copyight
+
+    &_copyight {
+    }
+}
