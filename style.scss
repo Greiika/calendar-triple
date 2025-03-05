@@ -69,6 +69,7 @@ body {
     width: 100%;
     margin: 20px auto 30px auto;
     padding: 0 15px;
+    
     // .calendar-triple_wrapper
 
     &_wrapper {
@@ -81,7 +82,7 @@ body {
     // .calendar-triple_header
 
     &_header {
-        background-image: url('img/1681373052_sneg-top-p-kartinki-na-vesennyuyu-temu-krasivo-58.jpg');
+        background-image: url('img/bg/vesna.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -91,7 +92,8 @@ body {
         height: 300px;
         margin-bottom: 10px;
         border-radius: 5px;
-        &-title {
+        
+        &-wrapper {
             max-width: 375px;
             width: 100%;
             backdrop-filter: blur(10px);
@@ -100,10 +102,24 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        &-title {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
             h1 {
-                color: cornflowerblue;
+                color: #6d494c;
             }
         }
+        
+        &-text {
+            display: inline-block;
+            font-size: 28px;
+            margin-right: 5px;
+            color: #6d494c;
+        }
+
         @media (max-width: 1248px) {
             max-width: 830px;
             width: 100%;
@@ -113,16 +129,6 @@ body {
         @media (max-width: 830px) {
             max-width: 400px;
         }
-    }
-
-    // .calendar-triple_header-bg
-
-    &_header-bg {
-    }
-
-    // .calendar-triple_month-bg
-
-    &_month-bg {
     }
 
     // .calendar-triple_box
@@ -236,22 +242,6 @@ body {
         margin-bottom: 10px;
     }
 
-
-    // .calendar-triple_month-prev
-
-    &_month-prev {
-    }
-
-    // .calendar-triple_month-current
-
-    &_month-current {
-    }
-
-    // .calendar-triple_month-next
-
-    &_month-next {
-    }
-
     // .calendar-triple_month-week
 
     &_month-week {
@@ -325,16 +315,6 @@ body {
                 color: rgba(0, 0, 0, 0.5);
             }
         }
-    
-        // .calendar-triple_month-arrows__prev
-    
-        &__prev {
-        }
-    
-        // .calendar-triple_month-arrows__next
-    
-        &__next {
-        }
     }
 
 }
@@ -361,19 +341,45 @@ body {
             margin-left: 10px;
         }
     }
+}
 
-    // .footer_year
 
-    &_year {
+[data-type ="bgZima"] {
+    background-image: url('/img/bg/zima.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    span,
+    h1 {
+        color: #c7d3eb;
     }
+}
 
-    // .footer_developer
+[data-type="bgVesna"] {
+    background-image: url('/img/bg/vesna.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-    &_developer {
+[data-type="bgLeto"] {
+    background-image: url('/img/bg/leto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    span,
+    h1 {
+        color: #505d00;
     }
+}
 
-    // .footer_copyight
-
-    &_copyight {
+[data-type="bgOsen"] {
+    background-image: url('/img/bg/osen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    span,
+    h1 {
+        color: #e36400;
     }
 }

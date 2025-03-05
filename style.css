@@ -71,7 +71,7 @@ body {
   gap: 10px;
 }
 .calendar-triple_header {
-  background-image: url("img/1681373052_sneg-top-p-kartinki-na-vesennyuyu-temu-krasivo-58.jpg");
+  background-image: url("img/bg/vesna.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -82,7 +82,7 @@ body {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.calendar-triple_header-title {
+.calendar-triple_header-wrapper {
   max-width: 375px;
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
@@ -93,8 +93,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+.calendar-triple_header-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
 .calendar-triple_header-title h1 {
-  color: cornflowerblue;
+  color: #6d494c;
+}
+.calendar-triple_header-text {
+  display: inline-block;
+  font-size: 28px;
+  margin-right: 5px;
+  color: #6d494c;
 }
 @media (max-width: 1248px) {
   .calendar-triple_header {
@@ -237,6 +248,7 @@ body {
   background-color: aliceblue;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .footer {
   box-shadow: 0 10px 20px;
 }
@@ -254,4 +266,44 @@ body {
 }
 .footer_year h3, .footer_developer h3 {
   margin-left: 10px;
+}
+
+[data-type=bgZima] {
+  background-image: url("/img/bg/zima.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+[data-type=bgZima] span,
+[data-type=bgZima] h1 {
+  color: #c7d3eb;
+}
+
+[data-type=bgVesna] {
+  background-image: url("/img/bg/vesna.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+[data-type=bgLeto] {
+  background-image: url("/img/bg/leto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+[data-type=bgLeto] span,
+[data-type=bgLeto] h1 {
+  color: #505d00;
+}
+
+[data-type=bgOsen] {
+  background-image: url("/img/bg/osen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+[data-type=bgOsen] span,
+[data-type=bgOsen] h1 {
+  color: #e36400;
 }/*# sourceMappingURL=style.css.map */
